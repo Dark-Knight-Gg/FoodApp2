@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Client.MainActivity4">
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/previous"
+            android:layout_width="40dp"
+            android:id="@+id/adminImgBack"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"/>
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/adminBtnAdd"
+            android:layout_marginEnd="50dp"
+            android:text="Thêm"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@id/adminBtnAdd"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/adminRecyclerview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
